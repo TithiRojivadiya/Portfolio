@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>T</span>ithi.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Tithi</span> Rojivadiya</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Gallery/photo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a dedicated and curious frontend developer currently in my 3rd year of Computer Engineering, with hands-on experience in HTML, CSS, JavaScript, and Tailwind CSS, along with a solid foundation in Python, C, and C++. I enjoy building responsive and interactive user interfaces, and I'm continuously learning to improve my development skills. I'm actively seeking internship opportunities where I can contribute to real-world projects, grow as a developer, and collaborate with experienced teams to turn creative ideas into seamless web experiences.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Tailwind CSS</li>
+                            <li><span>Database</span><br>MySQL</li>
+                            <li><span>Programming Language</span><br>JavaScript, Python, C, C++</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>"Gaining practical experience—this section will be updated soon with my upcoming roles!"</span></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025 - Current</span><br>IT'2027 | Dharmsinh Desai University - Nadiad</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- -----------Projects---------------  -->
+
+    <div id="projects">
+
+        <div class="container">
+
+            <h1 class="sub-title">Projects</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+
+                    <img src="Gallery/weather.jpg" alt="">
+
+                    <div class="layer">
+
+                        <h3>IndiCast</h3>
+
+                        <p>A user-friendly weather app built with Python and Tkinter, providing real-time weather updates for Indian cities using a weather API.
+                        </p>
+
+                        <a href="https://github.com/TithiRojivadiya/IndiCast"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="work">
+
+                    <img src="Gallery/sort.jpg" alt="">
+
+                    <div class="layer">
+
+                        <h3>Selection Sort Visualizer</h3>
+
+                        <p>A Java AWT-based graphical tool that dynamically demonstrates the Selection Sort algorithm with real-time animations, color-coded elements, and pause/resume functionality for better algorithmic understanding.</p>
+
+                        <a href="https://github.com/TithiRojivadiya/Selection_Sort_Visualizer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="work">
+
+                    <img src="Gallery/snake.png" alt="">
+
+                    <div class="layer">
+
+                        <h3>PythonGlide</h3>
+
+                        <p>A classic Snake game built using Python and Pygame, featuring intuitive controls, dynamic growth mechanics, and a restartable game over screen.</p>
+
+                        <a href="https://github.com/TithiRojivadiya/Python_Glide"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <a href="https://github.com/TithiRojivadiya" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- --------------------Contacts------------------------- -->
+
+    <div class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p><i class="fa-solid fa-paper-plane"></i> trojivadiya@gmail.com</p>
+                    
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/tithi-rojivadiya-6670092a3/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/TithiRojivadiya"><i class="fa-brands fa-github"></i></a> <!-- github -->
+                        
+
+                    </div>
+
+                    <a href="Gallery/Resume.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Your Name" required autocomplete="off">
+                        <input type="email" name="Email" placeholder="Your Email" required autocomplete="off">
+                        <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+
+                    </form>
+
+                    <span id="msg">Thank you! Your message has been successfully submitted.</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Tithi Rojivadiya. Designed & built with passion. All rights reserved. <i class="fa-solid fa-pen-to-square"></i> Last updated on May 7, 2025.</p>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMJVGAeMUFJmZDHM6jlQP4YQV_VvXQds2VzWyFWkT4MatcxdHZZH5rmizKnVXkkG6lTg/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Thank you! Your message has been successfully submitted.";
+          msg.style.display = "block";
+          
+         
+          setTimeout(function(){
+          msg.innerHTML = ""; // Hide again after 5 seconds
+
+          }, 5000);
+          form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+});
+</script>
+
+
+</body>
+</html>
